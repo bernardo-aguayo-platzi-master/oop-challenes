@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "start": "parcel ./person-challenge/web/html/index.html",
-        "test": "node ./person-challenge/src/js/Person.js"
+        "test": "node ./person-challenge/web/src/js/Person.js"
     },
     "keywords": [
         "js"
