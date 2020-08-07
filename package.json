@@ -4,11 +4,17 @@
     "description": "Two challenges of oop paradigm",
     "main": "index.js",
     "scripts": {
-        "test": "node ./person-challenge/src/js/Person.js"
+        "test": "node ./person-challenge/src/js/Person.js",
+        "start": "parcel *"
     },
     "keywords": [
         "js"
     ],
     "author": "Bernardo Aguayo Ortega",
-    "license": "MIT"
+    "license": "MIT",
+    "devDependencies": {
+        "marked": "^1.1.1",
+        "parcel-bundler": "^1.12.4",
+        "typescript": "^3.9.7"
+    }
 }
