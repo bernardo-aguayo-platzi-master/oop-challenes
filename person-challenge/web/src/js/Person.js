@@ -1,3 +1,5 @@
+const { isDefaultClause } = require("typescript");
+
 //constant
 const GENDER = {
     MALE: true,
@@ -6,37 +8,45 @@ const GENDER = {
 
 //freeze 
 Object.freeze(GENDER);
+//class
 class Person {
+    //Multiples constructor in only one constructor, cause the limitations respect constructors of js
     constructor(
         name = "",
         age = 0,
         gender = GENDER.MALE,
         weight = 0.0,
         height = 0.0) {
+        //check which of constructor is
         if (name !== "" && age !== 0 && gender === GENDER.MALE || gender === GENDER.FEMALE) {
-            this.name = name;
-            this.age = age;
-            this.gender = gender;
-            this.weight = weight;
-            this.height = height;
+            this._name = name;
+            this._age = age;
+            this._gender = gender;
+            this._weight = weight;
+            this._height = height;
         } else {
-            this.name = name;
-            this.age = age;
-            this.gender = gender;
-            this.weight = weight;
-            this.height = height;
+            this._name = name;
+            this._age = age;
+            this._gender = gender;
+            this._weight = weight;
+            this._height = height;
         }
     }
+
+    //is adult method
+    isAdult() {
+        if (this._age >= 18) return true;
+        else return false;
+    }
+
 }
 
-let newPerson = new Person()
+//export { Person, GENDER };
 
-console.log(newPerson.name)
+const adult = new Person("BI", 20);
 
-let newPerson2 = new Person("XI", 15, GENDER.FEMALE, 25.45, 102.52)
+const kid = new Person();
 
-console.log(newPerson2.name)
+console.log(adult.isAdult());
 
-let newPerson3 = new Person("jI", 18, GENDER.FEMALE)
-
-console.log(newPerson3)
+console.log(kid.isAdult());

@@ -1,8 +1,9 @@
 import {GENDER} from './Gender';
 
 export class Person{
-    //constructor
-    constructor(private _name = "", 
+    //constructor and initialization variables
+    constructor(
+    private _name = "", 
     private _age = 0, 
     private _gender = GENDER.MALE, 
     private _weight? : 0.0, 
@@ -18,6 +19,21 @@ export class Person{
     get weight(){return this._weight;}
 
     get height(){return this._height;}
+
     //setters
     set name(name) {this._name = name;} 
+
+    set age(age) {this._age = age;} 
+
+    set gender(gender) {this._gender = gender;} 
+
+    set weight(weight) {this._weight = weight;} 
+
+    set height(height) {this._height = height;} 
+
+    //is an adult method
+    public isAdult(): boolean{
+        if (this._age >= 18)  return true;
+        else return false;
+    }
 }

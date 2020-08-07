@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "start": "parcel ./person-challenge/web/html/index.html",
-        "test": "node ./person-challenge/web/src/js/Person.js"
+        "test-js": "node ./person-challenge/web/src/js/Person.js",
+        "test-ts": "ts-node ./person-challenge/web/src/ts/example.ts"
     },
     "keywords": [
         "js"
@@ -15,6 +16,7 @@
     "devDependencies": {
         "marked": "^1.1.1",
         "parcel-bundler": "^1.12.4",
+        "ts-node": "^8.10.2",
         "typescript": "^3.9.7"
     },
     "browserslist": [
