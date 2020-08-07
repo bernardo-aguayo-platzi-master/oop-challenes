@@ -1,0 +1,14 @@
+{
+    "name": "oop-challenges",
+    "version": "1.0.0",
+    "description": "Two challenges of oop paradigm",
+    "main": "index.js",
+    "scripts": {
+        "test": "node ./person-challenge/src/js/Person.js"
+    },
+    "keywords": [
+        "js"
+    ],
+    "author": "Bernardo Aguayo Ortega",
+    "license": "MIT"
+}
