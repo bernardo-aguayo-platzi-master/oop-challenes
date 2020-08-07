@@ -50,4 +50,9 @@ export class Person{
         if(this._toCheckGender === this._gender) return true;
         else return false
     }
+
+    //override to string method
+    public toString():object{
+        return this;
+    }
 }

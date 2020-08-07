@@ -52,6 +52,10 @@ class Person {
         else return false;
     }
 
+    //to string method override
+    toString() {
+        return this;
+    }
 }
 
 //export { Person, GENDER };
@@ -63,5 +67,6 @@ const kid = new Person("fu", 15, GENDER.FEMALE);
 //adult._gender = GENDER.FEMALE;
 //kid._gender = GENDER.MALE;
 
-console.log(adult.checkGender());
-console.log(kid.checkGender());
+let oldMan = adult.toString();
+
+console.log(oldMan)
