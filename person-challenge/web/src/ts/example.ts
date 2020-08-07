@@ -1,9 +1,12 @@
 import {Person} from './Person'
+import {GENDER} from './Gender'
 
-const test = new Person("ui");
-test.age=18
+const test = new Person("ui",15,GENDER.MALE);
+test.gender = GENDER.FEMALE;
 
-const test2 = new Person("Sa",18);
+console.log(test.checkGender())
 
-console.log(test.isAdult())
-console.log(test2.isAdult())
+const test2 = new Person("Sa",18,GENDER.FEMALE);
+test2.gender = GENDER.MALE;
+
+console.log(test2.checkGender())

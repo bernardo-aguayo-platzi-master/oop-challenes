@@ -31,6 +31,8 @@ class Person {
             this._weight = weight;
             this._height = height;
         }
+        //save the value of gender
+        this.saveGender(gender);
     }
 
     //is adult method
@@ -39,14 +41,27 @@ class Person {
         else return false;
     }
 
+    //save gender gender
+    saveGender(gender) {
+        this._toCheckGender = gender;
+    }
+
+    //check gender
+    checkGender() {
+        if (this._toCheckGender === this._gender) return true;
+        else return false;
+    }
+
 }
 
 //export { Person, GENDER };
 
-const adult = new Person("BI", 20);
+const adult = new Person("BI", 20, GENDER.MALE);
 
-const kid = new Person();
+const kid = new Person("fu", 15, GENDER.FEMALE);
 
-console.log(adult.isAdult());
+//adult._gender = GENDER.FEMALE;
+//kid._gender = GENDER.MALE;
 
-console.log(kid.isAdult());
+console.log(adult.checkGender());
+console.log(kid.checkGender());

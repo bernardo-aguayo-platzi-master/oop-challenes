@@ -1,13 +1,16 @@
 import {GENDER} from './Gender';
 
 export class Person{
+    private _toCheckGender:GENDER;
     //constructor and initialization variables
     constructor(
     private _name = "", 
     private _age = 0, 
     private _gender = GENDER.MALE, 
     private _weight? : 0.0, 
-    private _height? : 0.0){}
+    private _height? : 0.0,){
+        this.saveGender(_gender);
+    }
 
     //getters
     get name(){return this._name;}
@@ -32,8 +35,19 @@ export class Person{
     set height(height) {this._height = height;} 
 
     //is an adult method
-    public isAdult(): boolean{
+    public isAdult():boolean{
         if (this._age >= 18)  return true;
         else return false;
+    }
+
+    //save gender
+    private saveGender(gender:GENDER){
+        this._toCheckGender = gender;
+    }
+
+    //check gender
+    public checkGender():boolean{
+        if(this._toCheckGender === this._gender) return true;
+        else return false
     }
 }
