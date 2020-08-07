@@ -1,6 +1,6 @@
 import {Person} from './Person'
 
-let test = new Person("GI");
+const test = new Person("GI");
 
 console.log(test);
 
