@@ -4,8 +4,8 @@
     "description": "Two challenges of oop paradigm",
     "main": "index.js",
     "scripts": {
-        "test": "node ./person-challenge/src/js/Person.js",
-        "start": "parcel *"
+        "start": "parcel ./person-challenge/web/html/index.html",
+        "test": "node ./person-challenge/src/js/Person.js"
     },
     "keywords": [
         "js"
@@ -16,5 +16,8 @@
         "marked": "^1.1.1",
         "parcel-bundler": "^1.12.4",
         "typescript": "^3.9.7"
-    }
+    },
+    "browserslist": [
+        "last 3 chrome version"
+    ]
 }
