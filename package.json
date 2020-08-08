@@ -6,7 +6,8 @@
     "scripts": {
         "start": "parcel ./person-challenge/web/html/index.html",
         "test-js": "node ./person-challenge/web/src/js/Person.js",
-        "test-ts": "ts-node ./person-challenge/web/src/ts/example.ts"
+        "test-ts": "ts-node ./person-challenge/web/src/ts/example.ts",
+        "pug": "pug ./person-challenge/web/src/pug/index.pug -o ./person-challenge/web/html"
     },
     "keywords": [
         "js"
