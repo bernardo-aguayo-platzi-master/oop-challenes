@@ -1,5 +1,5 @@
 mixin insertDataModal
-    .modal-container
+    div(id="modal-container")
         .modal
             form.modal__form
                 label(for="name") name:
@@ -12,10 +12,10 @@ mixin insertDataModal
                 input(type="text" id="weight")
                 label(for="height") height:
                 input(type="text" id="height")  
-                a(href="#") sen data                                                  
+                a(href="#" title="Sen data") sen data                                                  
 
 mixin showData(className)
     .show-data-container
-        each val in ["name:","age:","gender:","weight:","height:"]
+        each val in ["name:","age:","gender:","weight:","height:","adult:"]
             h2=val
             p(class=className)

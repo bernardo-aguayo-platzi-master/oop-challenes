@@ -1,4 +1,5 @@
+// enum for genders 
 export const enum GENDER {
-    MALE = "M",
-    FEMALE = "F"
+    MALE = "Male",
+    FEMALE = "Female"
 }

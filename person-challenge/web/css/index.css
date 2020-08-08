@@ -41,7 +41,7 @@ main {
 
 /*modal container*/
 
-.modal-container {
+#modal-container {
     position: absolute;
     top: 0;
     left: 0;
@@ -95,4 +95,12 @@ main {
     color: darkslategray;
     background-color: white;
     transition: .5s;
+}
+
+
+/*hide*/
+
+.isHide {
+    visibility: hidden;
+    transition: .2s;
 }

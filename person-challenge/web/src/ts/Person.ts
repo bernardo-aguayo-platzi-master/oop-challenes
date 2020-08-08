@@ -1,15 +1,26 @@
+//import enum gender
 import {GENDER} from './Gender';
 
 export class Person{
+    //variable to check gender
     private _toCheckGender:GENDER;
+
     //constructor and initialization variables
     constructor(
     private _name = "", 
     private _age = 0, 
     private _gender = GENDER.MALE, 
-    private _weight? : 0.0, 
-    private _height? : 0.0,){
+    private _weight?: any ,  
+    private _height?: any){
         this.saveGender(_gender);
+
+        if(this._weight === undefined){
+            this._weight = 0.0
+        }
+
+        if(this.height === undefined){
+            this.height = 0.0
+        }
     }
 
     //getters
