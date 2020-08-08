@@ -1,0 +1,25 @@
+//-include mixins
+include mixin.pug
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Person Challenge
+        link(rel="stylesheet", href="../css/index.css")
+    body
+        main
+            //show data for js
+            +showData("forJs")
+            +showData("forJs")
+            +showData("forJs")
+            //show data for ts
+            +showData("forTs")
+            +showData("forTs")
+            +showData("forTs")
+        //modal
+        +insertDataModal
+        //ts source
+        //-script(src="../src/ts/example.ts")  
+        //js source
+        //-script(src="../src/js/Person.js")      
