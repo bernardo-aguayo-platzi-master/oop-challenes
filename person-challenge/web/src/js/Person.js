@@ -1,15 +1,12 @@
-const { isDefaultClause } = require("typescript");
-
+//enum
 //constant
 const GENDER = {
-    MALE: true,
-    FEMALE: false
+    MALE: "Male",
+    FEMALE: "Female"
 };
 
-//freeze 
-Object.freeze(GENDER);
 //class
-class Person {
+export class Person {
     //Multiples constructor in only one constructor, cause the limitations respect constructors of js
     constructor(
         name = "",
@@ -57,16 +54,3 @@ class Person {
         return this;
     }
 }
-
-//export { Person, GENDER };
-
-const adult = new Person("BI", 20, GENDER.MALE);
-
-const kid = new Person("fu", 15, GENDER.FEMALE);
-
-//adult._gender = GENDER.FEMALE;
-//kid._gender = GENDER.MALE;
-
-let oldMan = adult.toString();
-
-console.log(oldMan)
