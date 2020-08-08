@@ -24,6 +24,7 @@ main {
     grid-template-rows: repeat(2, 1fr);
     align-items: center;
     justify-items: center;
+    position: relative;
 }
 
 
@@ -35,4 +36,63 @@ main {
     background-color: white;
     box-shadow: 5px 10px 8px #888888;
     width: 15rem;
+}
+
+
+/*modal container*/
+
+.modal-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*modal*/
+
+.modal {
+    background-color: whitesmoke;
+    width: 33%;
+    padding: 1rem;
+}
+
+
+/*modal > form*/
+
+.modal form {
+    display: grid;
+}
+
+
+/*modal>input*/
+
+.modal input {
+    margin: .5rem 0;
+}
+
+
+/*modal > button*/
+
+.modal form>a {
+    margin: 0 auto;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    color: white;
+    background-color: darkslategray;
+    border-radius: 1rem;
+}
+
+
+/*hover*/
+
+.modal form>a:hover {
+    color: darkslategray;
+    background-color: white;
+    transition: .5s;
 }
