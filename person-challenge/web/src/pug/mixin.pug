@@ -1,3 +1,4 @@
+//-insert data modal
 mixin insertDataModal
     div(id="modal-container")
         .modal
@@ -13,7 +14,7 @@ mixin insertDataModal
                 label(for="height") height:
                 input(type="text" id="height")  
                 a(href="#" title="Sen data") sen data                                                  
-
+//-show data card
 mixin showData(className)
     .show-data-container
         each val in ["name:","age:","gender:","weight:","height:","adult:"]

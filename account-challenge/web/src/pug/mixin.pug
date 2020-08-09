@@ -1,0 +1,25 @@
+//- welcome screen
+mixin welcomeScreen
+    section.welcome-section-container
+        .welcome-section
+            h1 Welcome
+            p create account
+            //form of welcome section
+            form
+                label(for="holder") Holder:
+                input(type="text" id="holder")
+                label(for="amount") Amount:
+                input(type="text", id="amount")
+                a(href="#" id="create-button") create account now
+//- account screen
+mixin accountScreen
+    section.account-section-container
+        .account-section
+            //info content of account section
+            .account-section-info
+                label(id="holder") holder:
+                label(id="amount") amount:
+            // buttons of account section
+            .account-section-buttons
+                a(href="#" id="to-deposit-button") Do you want to deposit?
+                a(href="#" id="withdraw-button") Withdraw?
