@@ -38,6 +38,7 @@ export class Executable {
         this.addValues(this.card2.toString(), 6);
         //constructor third object
         this.card3 = new Person();
+        window.alert("Js")
         this.card3.name = window.prompt("Set name:");
         this.card3.age = parseFloat(window.prompt("Set age:"));
         this.card3.gender = this.checkGender(window.prompt("Set gender:")) ? GENDER.FEMALE : GENDER.MALE;
