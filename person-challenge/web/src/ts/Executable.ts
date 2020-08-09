@@ -18,11 +18,11 @@ export class Executable{
         //constructor first object
         this.card1 = new Person(this.name,this.age,this.gender,this.weight,this.height);
         //add values
-        this.addValues(this.card1,0);
+        this.addValues(this.card1.toString(),0);
         //constructor second object
         this.card2 = new Person(this.name,this.age,this.gender);
         //add values
-        this.addValues(this.card2,6);
+        this.addValues(this.card2.toString(),6);
         //constructor third object
         this.card3 = new Person();
         window.alert("Ts")
@@ -32,7 +32,7 @@ export class Executable{
         this.card3.weight = parseFloat(window.prompt("Set weight:"));
         this.card3.height = parseFloat(window.prompt("Set height:"));
         //add values
-        this.addValues(this.card3,12);
+        this.addValues(this.card3.toString(),12);
     }
 
     //function that check is male or female with regex
@@ -42,7 +42,7 @@ export class Executable{
     }   
 
     //function add values
-    addValues(object:Person, start:number):void{
+    addValues(object, start:number):void{
         this.cards[start].textContent = object.name;
         start++;
         this.cards[start].textContent = object.age.toString();

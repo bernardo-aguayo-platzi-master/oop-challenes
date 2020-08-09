@@ -39,11 +39,11 @@ export class Executable {
         //constructor third object
         this.card3 = new Person();
         window.alert("Js")
-        this.card3.name = window.prompt("Set name:");
-        this.card3.age = parseFloat(window.prompt("Set age:"));
-        this.card3.gender = this.checkGender(window.prompt("Set gender:")) ? GENDER.FEMALE : GENDER.MALE;
-        this.card3.weight = parseFloat(window.prompt("Set weight:"));
-        this.card3.height = parseFloat(window.prompt("Set height:"));
+        this.card3._name = window.prompt("Set name:");
+        this.card3._age = parseFloat(window.prompt("Set age:"));
+        this.card3._gender = this.checkGender(window.prompt("Set gender:")) ? GENDER.FEMALE : GENDER.MALE;
+        this.card3._weight = parseFloat(window.prompt("Set weight:"));
+        this.card3._height = parseFloat(window.prompt("Set height:"));
         //add values
         this.addValues(this.card3.toString(), 12);
     }
