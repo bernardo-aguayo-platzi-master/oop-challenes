@@ -13,12 +13,12 @@ mixin welcomeScreen
                 a(href="#" id="create-button") create account now
 //- account screen
 mixin accountScreen
-    section.account-section-container
+    section(id="account-section-container")
         .account-section
             //info content of account section
             .account-section-info
-                label(id="holder") holder:
-                label(id="amount") amount:
+                label(id="holder-label") holder:
+                label(id="amount-label") amount:
             // buttons of account section
             .account-section-buttons
                 a(href="#" id="to-deposit-button") Do you want to deposit?

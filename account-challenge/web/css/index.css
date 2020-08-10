@@ -86,16 +86,17 @@ a {
 
 /*account section container*/
 
-.account-section-container {
+#account-section-container {
     align-items: center;
     background-image: linear-gradient( 177.7deg, rgba(150, 198, 214, 1) 4.1%, rgba(79, 104, 112, 1) 93.9%);
-    display: flex;
-    /*position: absolute;*/
+    display: none;
+    position: absolute;
     justify-content: center;
     height: 100vh;
     width: 100vw;
     top: 0;
     left: 0;
+    transition: .3s;
 }
 
 

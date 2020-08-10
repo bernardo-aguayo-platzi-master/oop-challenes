@@ -7,7 +7,8 @@
         "start-person": "parcel ./person-challenge/web/html/index.html",
         "start-account": "parcel ./account-challenge/web/html/index.html",
         "test-js-person": "node ./person-challenge/web/src/js/Person.js",
-        "test-ts-person": "ts-node ./person-challenge/web/src/ts/example.ts",
+        "test-ts-person": "ts-node ./person-challenge/web/src/ts/index.ts",
+        "test-js-account": "node ./account-challenge/web/src/js/Account.js",
         "pug": "pug ./person-challenge/web/src/pug/index.pug -o ./person-challenge/web/html",
         "pug2": "pug ./account-challenge/web/src/pug/index.pug -o ./account-challenge/web/html"
     },
